@@ -1,0 +1,108 @@
+.hero {
+  background: #f7f7f7;
+  padding: 90px 24px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 850px;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  background: #ffffff;
+  font-size: 13px;
+  color: #555555;
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+}
+
+.content h1 span {
+  display: block;
+}
+
+.content p {
+  max-width: 700px;
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555555;
+}
+
+.searchBox {
+  display: flex;
+  max-width: 720px;
+  margin-top: 35px;
+  padding: 6px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+}
+
+.searchBox input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.searchBox button {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 6px;
+  background: #111111;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.quickLinks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.quickLinks span {
+  color: #777777;
+}
+
+.quickLinks a {
+  color: #333333;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+
+  .searchBox {
+    flex-direction: column;
+  }
+
+  .searchBox button {
+    width: 100%;
+  }
+}

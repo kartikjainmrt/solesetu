@@ -1,0 +1,92 @@
+.card {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #ffffff;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #eeeeee;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.verified {
+  padding: 5px 9px;
+  border-radius: 15px;
+  background: #eeeeee;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.content {
+  padding: 0 20px 20px;
+}
+
+.content h3 {
+  font-size: 18px;
+}
+
+.city {
+  margin-top: 7px;
+  color: #666666;
+  font-size: 14px;
+}
+
+.categories {
+  margin-top: 15px;
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.details {
+  display: flex;
+  gap: 35px;
+  margin-top: 20px;
+}
+
+.details div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.details span {
+  font-size: 11px;
+  color: #888888;
+  text-transform: uppercase;
+}
+
+.details strong {
+  font-size: 14px;
+}
+
+.footer {
+  padding: 14px 20px;
+  border-top: 1px solid #eeeeee;
+  font-size: 14px;
+  font-weight: 600;
+}
