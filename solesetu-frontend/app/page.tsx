@@ -1,7 +1,7 @@
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import CategoryCard from "@/components/CategoryCard/CategoryCard";
-import CityCard from "@/components/CityCard/CityCard"
+import CityCard from "@/components/CityCard/CityCard";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import FactoryCard from "@/components/FactoryCard/FactoryCard";
 import TrustSection from "@/components/TrustSection/TrustSection";
@@ -151,26 +151,17 @@ export default function Home() {
             <div>
               <p className="eyebrow">Explore Products</p>
 
-              <h2>
-                Browse by Category
-              </h2>
+              <h2>Browse by Category</h2>
 
-              <p>
-                Find products directly from verified manufacturers.
-              </p>
+              <p>Find products directly from verified manufacturers.</p>
             </div>
 
-            <a href="/categories">
-              View all categories →
-            </a>
+            <a href="/categories">View all categories →</a>
           </div>
 
           <div className="categoryGrid">
             {categories.map((category) => (
-              <CategoryCard
-                key={category.name}
-                {...category}
-              />
+              <CategoryCard key={category.name} {...category} />
             ))}
           </div>
         </section>
@@ -182,27 +173,19 @@ export default function Home() {
             <div>
               <p className="eyebrow">Manufacturing Hubs</p>
 
-              <h2>
-                Browse by City
-              </h2>
+              <h2>Browse by City</h2>
 
               <p>
-                Discover factories from India's major manufacturing
-                clusters.
+                Discover factories from India's major manufacturing clusters.
               </p>
             </div>
 
-            <a href="/cities">
-              Explore all cities →
-            </a>
+            <a href="/cities">Explore all cities →</a>
           </div>
 
           <div className="cityGrid">
             {cities.map((city) => (
-              <CityCard
-                key={city.city}
-                {...city}
-              />
+              <CityCard key={city.city} {...city} />
             ))}
           </div>
         </section>
@@ -214,24 +197,17 @@ export default function Home() {
             <div>
               <p className="eyebrow">Featured</p>
 
-              <h2>
-                Popular Products
-              </h2>
+              <h2>Popular Products</h2>
             </div>
 
-            <a href="/products">
-              View all products →
-            </a>
+            <a href="/products">View all products →</a>
           </div>
 
           <div className="productGrid">
-  {products.map((product) => (
-    <ProductCard
-      key={product.name}
-      {...product}
-    />
-  ))}
-</div>
+            {products.map((product) => (
+              <ProductCard key={product.name} {...product} />
+            ))}
+          </div>
         </section>
 
         {/* Factories */}
@@ -241,24 +217,17 @@ export default function Home() {
             <div>
               <p className="eyebrow">Verified Suppliers</p>
 
-              <h2>
-                Discover Factories
-              </h2>
+              <h2>Discover Factories</h2>
             </div>
 
-            <a href="/factories">
-              View factory directory →
-            </a>
+            <a href="/factories">View factory directory →</a>
           </div>
 
           <div className="factoryGrid">
-  {factories.map((factory) => (
-    <FactoryCard
-      key={factory.name}
-      {...factory}
-    />
-  ))}
-</div>
+            {factories.map((factory) => (
+              <FactoryCard key={factory.name} {...factory} />
+            ))}
+          </div>
         </section>
 
         {/* How it works */}
@@ -267,46 +236,34 @@ export default function Home() {
           <div className="sectionHeader centered">
             <p className="eyebrow">Simple Process</p>
 
-            <h2>
-              How SoleSetu Works
-            </h2>
+            <h2>How SoleSetu Works</h2>
 
-            <p>
-              Discover, connect and source directly from manufacturers.
-            </p>
+            <p>Discover, connect and source directly from manufacturers.</p>
           </div>
 
           <div className="steps">
             <div className="step">
               <span>01</span>
               <h3>Discover</h3>
-              <p>
-                Find products and factories by category or city.
-              </p>
+              <p>Find products and factories by category or city.</p>
             </div>
 
             <div className="step">
               <span>02</span>
               <h3>Connect</h3>
-              <p>
-                Send an RFQ or contact a verified factory.
-              </p>
+              <p>Send an RFQ or contact a verified factory.</p>
             </div>
 
             <div className="step">
               <span>03</span>
               <h3>Order</h3>
-              <p>
-                Purchase at transparent wholesale pricing and MOQ.
-              </p>
+              <p>Purchase at transparent wholesale pricing and MOQ.</p>
             </div>
 
             <div className="step">
               <span>04</span>
               <h3>Receive</h3>
-              <p>
-                Track your order from dispatch to delivery.
-              </p>
+              <p>Track your order from dispatch to delivery.</p>
             </div>
           </div>
         </section>

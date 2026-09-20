@@ -14,8 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "SoleSetu | B2B Footwear & Apparel Marketplace",
-  description:
-    "Discover verified footwear and apparel factories across India.",
+  description: "Discover verified footwear and apparel factories across India.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

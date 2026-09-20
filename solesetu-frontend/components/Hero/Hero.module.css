@@ -1,6 +1,8 @@
 .hero {
-  background: #f7f7f7;
-  padding: 90px 24px;
+  background: #eaf1ed;
+  padding: 100px 24px 110px;
+
+  border-bottom: 1px solid #dce6e1;
 }
 
 .container {
@@ -9,93 +11,181 @@
 }
 
 .content {
-  max-width: 850px;
+  max-width: 900px;
 }
+
+/* =========================
+BADGE
+========================= */
 
 .badge {
   display: inline-block;
-  margin-bottom: 20px;
+
+  margin-bottom: 22px;
   padding: 8px 14px;
-  border: 1px solid #dddddd;
+
+  border: 1px solid #c8d9d2;
   border-radius: 20px;
+
   background: #ffffff;
+
   font-size: 13px;
-  color: #555555;
+  font-weight: 600;
+
+  color: #1f3a37;
 }
+
+/* =========================
+HEADING
+========================= */
 
 .content h1 {
   margin: 0;
-  font-size: 56px;
-  line-height: 1.1;
-  font-weight: 700;
-  letter-spacing: -1.5px;
+
+  font-size: 58px;
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  letter-spacing: -1.8px;
+
+  color: #1f3a37;
 }
 
 .content h1 span {
   display: block;
+  color: #c77b30;
 }
+
+/* =========================
+DESCRIPTION
+========================= */
 
 .content p {
   max-width: 700px;
+
   margin-top: 24px;
+
   font-size: 18px;
   line-height: 1.7;
-  color: #555555;
+
+  color: #53615d;
 }
+
+/* =========================
+SEARCH
+========================= */
 
 .searchBox {
   display: flex;
+
   max-width: 720px;
+
   margin-top: 35px;
   padding: 6px;
+
   background: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 8px;
+
+  border: 1px solid #d5ded9;
+
+  border-radius: 10px;
+
+  box-shadow: 0 8px 25px rgba(31, 58, 55, 0.08);
 }
 
 .searchBox input {
   flex: 1;
+
   min-width: 0;
+
   padding: 14px;
+
   border: none;
   outline: none;
+
+  background: transparent;
+
   font-size: 15px;
+
+  color: #18201f;
+}
+
+.searchBox input::placeholder {
+  color: #89928f;
 }
 
 .searchBox button {
   padding: 14px 25px;
+
   border: none;
-  border-radius: 6px;
-  background: #111111;
+  border-radius: 7px;
+
+  background: #1f3a37;
   color: #ffffff;
-  font-weight: 600;
+
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
+
+.searchBox button:hover {
+  background: #c77b30;
+
+  transform: translateY(-1px);
+}
+
+/* =========================
+QUICK LINKS
+========================= */
 
 .quickLinks {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+
   gap: 14px;
+
   margin-top: 18px;
+
   font-size: 14px;
 }
 
 .quickLinks span {
-  color: #777777;
+  color: #68706d;
 }
 
 .quickLinks a {
-  color: #333333;
-  text-decoration: underline;
+  color: #1f3a37;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
 }
+
+.quickLinks a:hover {
+  color: #c77b30;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
 
 @media (max-width: 768px) {
   .hero {
-    padding: 60px 20px;
+    padding: 70px 20px 80px;
   }
 
   .content h1 {
     font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .content p {
+    font-size: 16px;
   }
 
   .searchBox {
@@ -104,5 +194,15 @@
 
   .searchBox button {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 34px;
+  }
+
+  .badge {
+    font-size: 12px;
   }
 }

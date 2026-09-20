@@ -1,84 +1,160 @@
 .card {
   display: block;
   overflow: hidden;
-  border: 1px solid #e5e5e5;
-  border-radius: 10px;
+
+  border: 1px solid #e3ded4;
+  border-radius: 12px;
+
   background: #ffffff;
+
+  color: #18201f;
+
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease;
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+
+  border-color: #c77b30;
+
+  box-shadow: 0 14px 32px rgba(31, 58, 55, 0.12);
 }
+
+/* =========================
+IMAGE
+========================= */
 
 .image {
   height: 220px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eeeeee;
-  color: #888888;
+
+  background: #eaf1ed;
+
+  color: #1f3a37;
+
   font-size: 14px;
+  font-weight: 600;
 }
+
+/* =========================
+CONTENT
+========================= */
 
 .content {
   padding: 18px;
 }
 
+/* =========================
+CATEGORY
+========================= */
+
 .category {
   font-size: 12px;
-  color: #777777;
+
+  color: #c77b30;
+
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+
+  letter-spacing: 0.8px;
+
+  font-weight: 700;
 }
+
+/* =========================
+PRODUCT NAME
+========================= */
 
 .content h3 {
   margin-top: 7px;
+
   font-size: 17px;
+
   line-height: 1.4;
+
+  color: #1f3a37;
 }
+
+/* =========================
+FACTORY
+========================= */
 
 .factory {
   margin-top: 12px;
+
   font-size: 14px;
+
   font-weight: 600;
+
+  color: #374541;
 }
+
+/* =========================
+CITY
+========================= */
 
 .city {
   margin-top: 4px;
+
   font-size: 13px;
-  color: #777777;
+
+  color: #68706d;
 }
+
+/* =========================
+BOTTOM
+========================= */
 
 .bottom {
   display: flex;
+
   justify-content: space-between;
   align-items: flex-end;
+
   margin-top: 18px;
   padding-top: 15px;
-  border-top: 1px solid #eeeeee;
+
+  border-top: 1px solid #e3ded4;
 }
 
 .bottom div {
   display: flex;
+
   flex-direction: column;
+
   gap: 4px;
 }
+
+/* =========================
+LABELS
+========================= */
 
 .label,
 .price span {
   font-size: 11px;
-  color: #888888;
+
+  color: #68706d;
+
   text-transform: uppercase;
+
+  letter-spacing: 0.5px;
 }
 
 .bottom strong {
   font-size: 14px;
+
+  color: #1f3a37;
 }
 
 .price {
   text-align: right;
+}
+
+.price strong {
+  color: #c77b30;
 }

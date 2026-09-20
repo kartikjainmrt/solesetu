@@ -3,9 +3,7 @@ export default function CitiesPage() {
     <main>
       <h1>Browse by City</h1>
 
-      <p>
-        Explore manufacturing hubs across India.
-      </p>
+      <p>Explore manufacturing hubs across India.</p>
     </main>
   );
 }

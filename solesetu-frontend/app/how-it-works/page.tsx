@@ -4,8 +4,8 @@ export default function HowItWorksPage() {
       <h1>How SoleSetu Works</h1>
 
       <p>
-        Discover factories, request quotes, place orders
-        and track your shipments.
+        Discover factories, request quotes, place orders and track your
+        shipments.
       </p>
     </main>
   );

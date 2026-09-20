@@ -1,6 +1,7 @@
 .section {
   padding: 90px 24px;
-  background: #111111;
+
+  background: #1f3a37;
   color: #ffffff;
 }
 
@@ -16,19 +17,24 @@
 .heading > p {
   font-size: 12px;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 700;
+  color: #c77b30;
+  text-transform: uppercase;
 }
 
 .heading h2 {
   margin-top: 15px;
   font-size: 40px;
   line-height: 1.2;
+  color: #ffffff;
 }
 
 .heading span {
   display: block;
   margin-top: 18px;
-  color: #bbbbbb;
+
+  color: #c9d4d1;
+
   line-height: 1.7;
 }
 
@@ -41,23 +47,48 @@
 
 .card {
   padding: 25px;
-  border: 1px solid #333333;
-  border-radius: 10px;
+
+  border: 1px solid #3b5753;
+  border-radius: 12px;
+
+  background: #274641;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+
+  border-color: #c77b30;
+
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
 }
 
 .number {
   font-size: 12px;
-  color: #999999;
+
+  color: #c77b30;
+
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .card h3 {
   margin-top: 35px;
+
   font-size: 19px;
+
+  color: #ffffff;
 }
 
 .card p {
   margin-top: 12px;
-  color: #aaaaaa;
+
+  color: #c9d4d1;
+
   font-size: 14px;
   line-height: 1.6;
 }

@@ -22,27 +22,17 @@ export default function FactoryCard({
   return (
     <a href={href} className={styles.card}>
       <div className={styles.top}>
-        <div className={styles.logo}>
-          {name.charAt(0)}
-        </div>
+        <div className={styles.logo}>{name.charAt(0)}</div>
 
-        {verified && (
-          <span className={styles.verified}>
-            ✓ Verified
-          </span>
-        )}
+        {verified && <span className={styles.verified}>✓ Verified</span>}
       </div>
 
       <div className={styles.content}>
         <h3>{name}</h3>
 
-        <p className={styles.city}>
-          📍 {city}
-        </p>
+        <p className={styles.city}>📍 {city}</p>
 
-        <p className={styles.categories}>
-          {categories}
-        </p>
+        <p className={styles.categories}>{categories}</p>
 
         <div className={styles.details}>
           <div>
@@ -57,9 +47,7 @@ export default function FactoryCard({
         </div>
       </div>
 
-      <div className={styles.footer}>
-        View factory →
-      </div>
+      <div className={styles.footer}>View factory →</div>
     </a>
   );
 }

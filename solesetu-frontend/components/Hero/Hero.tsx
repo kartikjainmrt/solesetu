@@ -15,9 +15,8 @@ export default function Hero() {
           </h1>
 
           <p>
-            Discover footwear and apparel manufacturers across India,
-            compare products, connect with factories, and order at
-            low MOQs.
+            Discover footwear and apparel manufacturers across India, compare
+            products, connect with factories, and order at low MOQs.
           </p>
 
           <div className={styles.searchBox}>
@@ -26,25 +25,15 @@ export default function Hero() {
               placeholder="Search products, categories or factories..."
             />
 
-            <button>
-              Search
-            </button>
+            <button>Search</button>
           </div>
 
           <div className={styles.quickLinks}>
             <span>Popular:</span>
-            <a href="/products?category=footwear">
-              Footwear
-            </a>
-            <a href="/products?category=sports">
-              Sports Shoes
-            </a>
-            <a href="/products?category=sandals">
-              Sandals
-            </a>
-            <a href="/factories">
-              Factories
-            </a>
+            <a href="/products?category=footwear">Footwear</a>
+            <a href="/products?category=sports">Sports Shoes</a>
+            <a href="/products?category=sandals">Sandals</a>
+            <a href="/factories">Factories</a>
           </div>
         </div>
       </div>
