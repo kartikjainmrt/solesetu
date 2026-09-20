@@ -9,8 +9,8 @@ export default function Footer() {
             <h2>SoleSetu</h2>
 
             <p>
-              A B2B marketplace connecting retailers
-              directly with verified factories.
+              A B2B marketplace connecting retailers directly with verified
+              factories.
             </p>
           </div>
 
@@ -50,9 +50,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <span>
-            © 2026 SoleSetu. All rights reserved.
-          </span>
+          <span>© 2026 SoleSetu. All rights reserved.</span>
 
           <div>
             <a href="/terms">Terms</a>

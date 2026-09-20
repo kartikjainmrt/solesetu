@@ -34,22 +34,18 @@ export default function TrustSection() {
         <div className={styles.heading}>
           <p>WHY SOLESETU</p>
 
-          <h2>
-            Built to make B2B sourcing simpler.
-          </h2>
+          <h2>Built to make B2B sourcing simpler.</h2>
 
           <span>
-            Discover suppliers, understand pricing and manage
-            your sourcing journey from one platform.
+            Discover suppliers, understand pricing and manage your sourcing
+            journey from one platform.
           </span>
         </div>
 
         <div className={styles.grid}>
           {trustPoints.map((point) => (
             <div className={styles.card} key={point.number}>
-              <span className={styles.number}>
-                {point.number}
-              </span>
+              <span className={styles.number}>{point.number}</span>
 
               <h3>{point.title}</h3>
 

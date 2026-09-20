@@ -1,6 +1,7 @@
 .footer {
-  background: #ffffff;
-  border-top: 1px solid #e5e5e5;
+  background: #1f3a37;
+  border-top: 1px solid #2d4b47;
+  color: #ffffff;
 }
 
 .container {
@@ -15,17 +16,29 @@
   gap: 40px;
 }
 
+/* =========================
+BRAND
+========================= */
+
 .brand h2 {
-  font-size: 24px;
+  font-size: 26px;
+  color: #ffffff;
+  letter-spacing: 0.3px;
 }
 
 .brand p {
   max-width: 280px;
   margin-top: 15px;
-  color: #666666;
+
+  color: #c9d4d1;
+
   line-height: 1.6;
   font-size: 14px;
 }
+
+/* =========================
+COLUMNS
+========================= */
 
 .column {
   display: flex;
@@ -35,26 +48,43 @@
 
 .column h3 {
   margin-bottom: 5px;
+
   font-size: 14px;
+  font-weight: 700;
+
+  color: #ffffff;
 }
 
 .column a {
-  color: #666666;
+  color: #c9d4d1;
+
   font-size: 13px;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .column a:hover {
-  color: #111111;
+  color: #c77b30;
 }
+
+/* =========================
+BOTTOM
+========================= */
 
 .bottom {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+
   margin-top: 60px;
   padding-top: 20px;
-  border-top: 1px solid #eeeeee;
-  color: #777777;
+
+  border-top: 1px solid #3b5753;
+
+  color: #aebfbb;
+
   font-size: 12px;
 }
 
@@ -62,6 +92,19 @@
   display: flex;
   gap: 20px;
 }
+
+.bottom a {
+  color: #aebfbb;
+  transition: color 0.2s ease;
+}
+
+.bottom a:hover {
+  color: #c77b30;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
 
 @media (max-width: 900px) {
   .main {
@@ -74,11 +117,21 @@
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 55px 20px 20px;
+  }
+
   .main {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .bottom {
     flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .bottom div {
+    flex-wrap: wrap;
   }
 }

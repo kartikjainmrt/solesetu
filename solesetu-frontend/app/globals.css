@@ -11,8 +11,8 @@ body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
-  color: #111111;
+  background: #f8f5ef;
+  color: #18201f;
 }
 
 a {
@@ -31,6 +31,10 @@ button {
   cursor: pointer;
 }
 
+/* =========================
+SECTIONS
+========================= */
+
 .section {
   max-width: 1280px;
   margin: 0 auto;
@@ -41,8 +45,12 @@ button {
   max-width: none;
   padding-left: max(24px, calc((100% - 1280px) / 2));
   padding-right: max(24px, calc((100% - 1280px) / 2));
-  background: #f7f7f7;
+  background: #eaf1ed;
 }
+
+/* =========================
+SECTION HEADER
+========================= */
 
 .sectionHeader {
   display: flex;
@@ -56,27 +64,41 @@ button {
   margin-top: 8px;
   font-size: 34px;
   line-height: 1.2;
+  color: #1f3a37;
 }
 
 .sectionHeader p {
   margin-top: 8px;
-  color: #666666;
+  color: #68706d;
 }
 
 .sectionHeader > a {
   font-size: 14px;
   font-weight: 600;
+  color: #1f3a37;
   white-space: nowrap;
 }
+
+.sectionHeader > a:hover {
+  color: #c77b30;
+}
+
+/* =========================
+EYEBROW
+========================= */
 
 .eyebrow {
   margin: 0 !important;
   font-size: 13px !important;
-  font-weight: 600;
-  color: #666666 !important;
+  font-weight: 700;
+  color: #c77b30 !important;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
 }
+
+/* =========================
+GRIDS
+========================= */
 
 .categoryGrid {
   display: grid;
@@ -90,16 +112,39 @@ button {
   gap: 20px;
 }
 
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.factoryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* =========================
+EMPTY SECTION
+========================= */
+
 .emptySection {
   min-height: 250px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px dashed #cccccc;
-  border-radius: 10px;
-  color: #777777;
+
+  border: 1px dashed #cfc7ba;
+  border-radius: 12px;
+
+  color: #68706d;
   background: #ffffff;
 }
+
+/* =========================
+STEPS
+========================= */
 
 .steps {
   display: grid;
@@ -110,31 +155,54 @@ button {
 
 .step {
   padding: 25px;
-  border: 1px solid #e5e5e5;
-  border-radius: 10px;
+
+  border: 1px solid #e3ded4;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.step:hover {
+  transform: translateY(-4px);
+  border-color: #c77b30;
+  box-shadow: 0 12px 30px rgba(31, 58, 55, 0.08);
 }
 
 .step span {
   font-size: 14px;
   font-weight: 700;
-  color: #777777;
+  color: #c77b30;
 }
 
 .step h3 {
   margin-top: 20px;
   font-size: 20px;
+  color: #1f3a37;
 }
 
 .step p {
   margin-top: 10px;
-  color: #666666;
+  color: #68706d;
   line-height: 1.6;
 }
+
+/* =========================
+CENTERED
+========================= */
 
 .centered {
   display: block;
   text-align: center;
 }
+
+/* =========================
+RESPONSIVE
+========================= */
 
 @media (max-width: 1000px) {
   .categoryGrid {
@@ -142,6 +210,14 @@ button {
   }
 
   .cityGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .factoryGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -170,43 +246,9 @@ button {
 
   .categoryGrid,
   .cityGrid,
+  .productGrid,
+  .factoryGrid,
   .steps {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 1000px) {
-  .productGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .productGrid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.productGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.factoryGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-@media (max-width: 1000px) {
-  .factoryGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .factoryGrid {
     grid-template-columns: 1fr;
   }
 }

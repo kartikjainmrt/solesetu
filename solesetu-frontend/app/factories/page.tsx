@@ -3,9 +3,7 @@ export default function FactoriesPage() {
     <main>
       <h1>Factories</h1>
 
-      <p>
-        Discover verified manufacturers across India.
-      </p>
+      <p>Discover verified manufacturers across India.</p>
     </main>
   );
 }

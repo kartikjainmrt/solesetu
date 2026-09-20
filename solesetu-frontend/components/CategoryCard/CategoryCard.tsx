@@ -13,9 +13,7 @@ export default function CategoryCard({
 }: CategoryCardProps) {
   return (
     <a href={href} className={styles.card}>
-      <div className={styles.imagePlaceholder}>
-        {name.charAt(0)}
-      </div>
+      <div className={styles.imagePlaceholder}>{name.charAt(0)}</div>
 
       <div className={styles.content}>
         <h3>{name}</h3>
